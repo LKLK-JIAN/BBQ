@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#01b486</color>
+    <color name="colorPrimaryDark">#01b486</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white2">#f5f3f3</color>
+    <color name="colorRed">#d50f09</color>
+
+
+    <color name="bg_black">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#694E42</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="gray">#4a4949</color>
+
+    <color name="vp_background">#dad7d7</color>
+    <color name="lowalarm_bg">#40A4F0</color>
+    <color name="highalarm_bg">#d50f09</color>
+
+    <color name="text_black">#000000</color>
+    <color name="setting_version">#afafb2</color>
+
+    <color name="content_textcolor">#69c8fa</color>
+
+    <color name="balck">#161515</color>
+
+    <color name="color_b7b8bd">#b7b8bd</color>
+    <color name="button_checked">#e92834</color>
+    <color name="button_normal">#f7f5f5</color>
+
+
+</resources>

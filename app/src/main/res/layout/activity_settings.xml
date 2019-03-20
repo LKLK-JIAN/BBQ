@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_setting_tempunit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_setting_c"
+            style="@style/tab_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="℃" />
+
+        <RadioButton
+            android:id="@+id/rb_setting_f"
+            style="@style/tab_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="℉" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_setting_model"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_setting_prset"
+            style="@style/tab_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting_preset" />
+
+        <RadioButton
+            android:id="@+id/rb_setting_manual"
+            style="@style/tab_menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/setting_manual" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_setting_ringtone"
+        android:layout_width="50dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 ℃"
+        android:textSize="70sp" />
+   
+</RelativeLayout>

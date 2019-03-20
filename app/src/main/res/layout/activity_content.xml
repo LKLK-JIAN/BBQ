@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentActivity">
+
+    <RelativeLayout
+        android:id="@+id/content_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/tv_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@mipmap/back"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_content_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/tv_content_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/import_data"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/content_chart"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:background="@color/black"-->
+    <!--android:orientation="vertical"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chart_value"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/textgreen" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chart_maxormin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/textgreen" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chart_fastorslow"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/textgreen" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chart_ac"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/textgreen" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_chart_hold"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="25dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:textColor="@color/textgreen" />-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content_actionbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_content_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/tv_content_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/content_selector_config"
+                    android:gravity="center"
+                    android:text=" ℃ "
+                    android:textColor="@color/content_textcolor" />
+
+                <TextView
+                    android:id="@+id/tv_content_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/content_selector_listdata"
+                    android:gravity="center"
+                    android:text=" ℉ "
+                    android:textColor="@color/content_textcolor" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_below="@+id/ll_content_unit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp">
+                    <com.example.benetech.bbq.view.RingProgressBar
+                        android:id="@+id/rb_content_value"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        app:bftSize="20sp"
+                        app:present=" "
+                        app:ringProgressColor="@color/lowalarm_bg"
+                        app:textSize="55sp"
+                        app:unittemp="℃" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/content_actionbar"
+            android:layout_weight="1"
+            android:background="#18caff">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_chart_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:padding="10dp">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

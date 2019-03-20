@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main3Activity">
+
+    <com.example.benetech.bbq.wight.ShoppingCartView
+        android:id="@+id/scv_main3_channel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.example.benetech.bbq.wight.ShoppingCartView>
+
+    <TextView
+        android:id="@+id/tv_main3_realtime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="获取实时温度" />
+
+    <TextView
+        android:id="@+id/tv_main3_time"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="获取实时时间" />
+
+    <TextView
+        android:id="@+id/tv_main3_unit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="获取实时单位" />
+
+    <TextView
+        android:id="@+id/tv_main3_battery"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="获取实时电量" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_main3_settemp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_main3_settemp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="设置温度值" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_main3_settime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="0123456789"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_main3_settime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="设置时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rg_main3_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_main3_1"
+                android:layout_weight="1"
+                android:text="设置1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <RadioButton
+                android:id="@+id/rb_main3_0"
+                android:layout_weight="1"
+                android:text="设置0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_main3_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="设置单位" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_main3_clear"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:text="清除"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <ScrollView
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_main3_result"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+</LinearLayout>

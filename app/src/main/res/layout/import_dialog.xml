@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@color/balck"
+    tools:openDrawer="start">
+    tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:id="@+id/sft"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/data_import"
+            android:textColor="@color/balck"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sft"
+        android:layout_margin="2dp"
+        android:background="@color/white">
+
+        <RadioGroup
+            android:id="@+id/rg_import_radiogroup"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true">
+
+            <RadioButton
+                android:id="@+id/rb_import_pdf"
+                android:gravity="center"
+                android:textColor="@color/balck"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PDF" />
+
+            <RadioButton
+
+                android:id="@+id/rb_import_excel"
+                android:gravity="center"
+                android:textColor="@color/balck"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="EXCEL"/>
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rg_import_radiogroup"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_import_cancel"
+                android:text="@string/cancle"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_import_confirm"
+                android:text="@string/confirm"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_channelone_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@mipmap/back"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_channelone_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/sb_add" />
+
+        <TextView
+            android:id="@+id/tv_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/channel_one"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/iv_channelone_file"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:background="@android:color/transparent"
+            android:onClick="file"
+            android:src="@mipmap/save_img" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_timedown"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="17dp"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:text="倒计时"-->
+        <!--android:textSize="25sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_battery"-->
+        <!--android:layout_width="120dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/tv_channelone_timedown"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="battery"-->
+        <!--android:textSize="25sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_food"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_channelone_battery"-->
+        <!--android:layout_alignStart="@+id/tv_channelone_battery"-->
+        <!--android:text="food"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:textSize="25sp" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_value"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginStart="28dp"-->
+        <!--android:layout_marginBottom="97dp"-->
+        <!--android:text="00"-->
+        <!--android:textSize="90sp" />-->
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_level"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/tv_channelone_battery"-->
+        <!--android:layout_below="@+id/tv_channelone_food"-->
+        <!--android:textSize="25sp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="level" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_unit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginEnd="168dp"-->
+        <!--android:layout_marginBottom="64dp"-->
+        <!--android:text="℃"-->
+        <!--android:textSize="45sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelone_limit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/tv_channelone_level"-->
+        <!--android:layout_alignStart="@+id/tv_channelone_battery"-->
+        <!--android:textSize="25sp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="limit" />-->
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_channelone"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/food" />
+
+                <TextView
+                    android:id="@+id/tv_channelone_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/level" />
+
+                <TextView
+                    android:id="@+id/tv_channelone_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/limit" />
+
+                <TextView
+                    android:id="@+id/tv_channelone_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_align"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/ll_channelone"
+                android:background="@color/bg_black"></View>
+
+            <TextView
+                android:id="@+id/tv_channelone_timedown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="13dp"
+                android:text=""
+                android:textSize="25sp" />
+
+            <com.example.benetech.bbq.view.BatteryView
+                android:id="@+id/bv_channelone_battery"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/ll_channelone"
+                android:background="#fff"
+                android:gravity="center"
+                app:batteryColor="@android:color/black"
+                app:batteryOrientation="horizontal" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bv_channelone_battery"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@id/ll_channelone">
+
+                <com.example.benetech.bbq.view.RingProgressBar
+                    android:id="@+id/rb_channelone_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:present="@string/present"
+                    app:unittemp="℃"
+                    app:bftSize="18sp"
+                    app:ringProgressColor="@color/lowalarm_bg" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_channelone_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="97dp"
+                android:gravity="center"
+                android:text="00"
+                android:textSize="90sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_channelone_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="178dp"
+                android:layout_marginBottom="18dp"
+                android:text="℃"
+                android:visibility="gone"
+                android:textSize="45sp" />
+
+            <View
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_black"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="#18caff">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_channelone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+            </com.github.mikephil.charting.charts.LineChart>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

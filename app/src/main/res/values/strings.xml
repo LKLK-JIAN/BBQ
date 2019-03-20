@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">BBQ</string>
+    <string name="dialog_title">设备列表</string>
+    <string name="dialog_search">搜索</string>
+    //ConnectDialog
+    <string name="connect_dialog">连接中...</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    //状态判断
+    <string name="connect_success">连接成功</string>
+    <string name="connect_file">连接失败</string>
+
+    <string name="tab_menu_temp">温度</string>
+    <string name="tab_menu_history">记录</string>
+    <string name="main_title_bbq">烧烤温度计</string>
+
+    <string name="ftemp_offlineorname">离线</string>
+    <string name="ftemp_disconnect">已断开</string>
+    <string name="ftemp_connect">已连接</string>
+    <string name="ftemp_high_alarm">高温报警值</string>
+    <string name="ftemp_low_alarm">低温报警值</string>
+
+    <string name="bluetooth">蓝牙</string>
+    <string name="setting">设置</string>
+    <string name="setting_unit">单位</string>
+    <string name="setting_timing">定时</string>
+    <string name="setting_remindersetting">提醒音设置</string>
+    <string name="setting_tempreminder">温度提醒</string>
+    <string name="setting_templimit">温度限制</string>
+    <string name="setting_about">关于</string>
+    <string name="setting_aboutus">关于我们</string>
+    <string name="setting_feedback">反馈</string>
+    <string name="bluetooth_search">搜索</string>
+    <string name="channel_title">通道</string>
+
+    <string name="channel_one">通道 1</string>
+    <string name="channel_two">通道 2</string>
+    <string name="channel_three">通道 3</string>
+    <string name="channel_four">通道 4</string>
+
+    <string name="main4_temp">温度</string>
+
+    <string name="tempreminder">温度提醒</string>
+    <string name="select_unit">请选择温度单位</string>
+    <string name="cancle">取消</string>
+    <string name="tempremindermusic">温度提醒音</string>
+    <string name="lowtemperaturealarmvalue">低温报警值</string>
+    <string name="hightemperaturealarmvalue">高温报警值</string>
+
+    <string name="highesttemperature">最高温度</string>
+
+    //file
+    <string name="history">历史记录</string>
+    <string name="edit">编辑</string>
+
+    <string name="select">已选择</string>
+    <string name="delete">删除</string>
+    <string name="allselect">全选</string>
+    <string name="invertselect">反选</string>
+    <string name="his_cancelallselect">取消全选</string>
+    <string name="his_allselect">全选</string>
+    <string name="select_app">选择应用</string>
+    <string name="content_dialog_title">提示</string>
+    <string name="confirm">确定</string>
+
+    <string name="his_cancle">取消</string>
+    <string name="his_deleteitem">删除后不可恢复，是否删除？</string>
+
+    <string name="setting_preset">预设</string>
+    <string name="setting_manual">手动</string>
+    <string name="reminder_play"> 播放</string>
+    <string name="activity_additem">添加</string>
+    <string name="timedown_title">倒计时设置</string>
+    <string name="reminder_title">提醒音设置</string>
+    <string name="beef">牛肉</string>
+    <string name="lamf">羊肉</string>
+    <string name="veal">小牛肉</string>
+    <string name="pork">猪肉</string>
+    <string name="hamburger">汉堡</string>
+    <string name="chicken">鸡肉</string>
+    <string name="duck">鸭肉</string>
+    <string name="turkey">火鸡</string>
+    <string name="cookedham">熟火腿</string>
+    <string name="freshham">新鲜火腿</string>
+    <string name="groundbeef">搅碎的牛肉</string>
+    <string name="groundlamf">搅碎的羊肉</string>
+    <string name="groundpork">搅碎的猪肉</string>
+    <string name="groundchicken">搅碎的鸡肉</string>
+    <string name="potato">烤土豆</string>
+    <string name="corn">玉米</string>
+    <string name="medium">半分熟</string>
+    <string name="mediumwell">七分熟</string>
+    <string name="welldone">全熟</string>
+    <string-array name="food">
+        <item>牛肉  </item>
+        <item>羊肉  </item>
+        <item>小牛肉</item>
+        <item>猪肉  </item>
+        <item>汉堡  </item>
+        <item>鸡肉  </item>
+        <item>鸭肉  </item>
+        <item>火鸡  </item>
+        <item>熟火腿    </item>
+        <item>新鲜火腿  </item>
+        <item>搅碎的牛肉</item>
+        <item>搅碎的羊肉</item>
+        <item>搅碎的猪肉</item>
+        <item>搅碎的鸡肉</item>
+        <item>烤土豆   </item>
+        <item>玉米     </item>
+    </string-array>
+    <string-array name="beef">
+        <item>四分熟</item>
+        <item>半分熟</item>
+        <item>全熟</item>
+    </string-array>
+    <string-array name="lamb">
+        <item>四分熟</item>
+        <item>半分熟</item>
+        <item>全熟  </item>
+    </string-array>
+    <string-array name="veal">
+        <item>四分熟</item>
+        <item>半分熟</item>
+        <item>全熟  </item>
+    </string-array>
+    <string-array name="pork">
+        <item>全熟</item>
+    </string-array>
+    <string name="time_down">时间到</string>
+    <string name="food">食物</string>
+    <string name="level">熟度</string>
+    <string name="limit">温度</string>
+
+    <string name="unit_setting">设置</string>
+    <string name="unit_clear">  清除</string>
+    <string name="unit_save">   保存</string>
+    <string name="save_data">数据保存</string>
+    <string name="saving">保存中...</string>
+    <string name="no_title">标题不能为空</string>
+    <string name="input_title">请输入标题</string>
+    <string name="history_record">历史记录</string>
+    <string name="haven_select">已选择</string>
+    <string name="history_delete">删除</string>
+    <string name="history_allselect">全选</string>
+    <string name="history_edit">编辑</string>
+    <string name="loading">加载中...</string>
+
+    <string name="data_import">数据导出</string>
+    <string name="data_importing">导出中...</string>
+    <string name="present">当前温度</string>
+
+    <string name="title">标题</string>
+    <string name="time">时间</string>
+    <string name="serial">序号</string>
+    <string name="temp">温度</string>
+    <string name="haven_save">文件，已保存在BBQ目录下。</string>
+</resources>

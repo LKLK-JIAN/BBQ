@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TempReminderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_tempreminder_back"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/sb_add"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tempreminder"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:padding="2dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_tempreminder_c"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/content_selector_config"
+                android:gravity="center"
+                android:text=" ℃ "
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:id="@+id/tv_tempreminder_f"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/content_selector_listdata"
+                android:gravity="center"
+                android:text=" ℉ "
+                android:textColor="@color/content_textcolor" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_tempreminder_preset"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true">
+
+            <com.example.benetech.bbq.view.EasyPickerView
+                android:id="@+id/pv_tempreminder_food"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                />
+
+            <com.example.benetech.bbq.view.EasyPickerView
+                android:id="@+id/pv_tempreminder_level"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_temp_value"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:padding="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tempreminder_preset"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/content_selector_config"
+                android:gravity="center"
+                android:text="@string/setting_preset"
+                android:textColor="@color/content_textcolor" />
+
+            <TextView
+                android:id="@+id/tv_tempreminder_manual"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/content_selector_listdata"
+                android:gravity="center"
+                android:text="@string/setting_manual"
+                android:textColor="@color/content_textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tempreminder_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_temp_value"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_tempreminder_manualvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_temp_bai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/text_black"
+                    android:text="0"
+                    android:textSize="60sp" />
+                <TextView
+                    android:id="@+id/tv_temp_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/text_black"
+                    android:textSize="60sp" />
+                <TextView
+                    android:id="@+id/tv_temp_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginRight="5dp"
+                    android:text="0"
+                    android:textColor="@color/text_black"
+                    android:textSize="60sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_temp_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:layout_marginRight="5dp"
+                android:text="70"
+                android:textColor="@color/text_black"
+                android:textSize="60sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_temp_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:layout_toRightOf="@+id/tv_temp_value"
+                android:text="℃"
+                android:textColor="@color/text_black"
+                android:textSize="60sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_tempreminder_manual"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true">
+            <com.example.benetech.bbq.view.EasyPickerView
+                android:id="@+id/pv_tempreminder_hundred"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <com.example.benetech.bbq.view.EasyPickerView
+                android:id="@+id/pv_tempreminder_ten"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <com.example.benetech.bbq.view.EasyPickerView
+                android:id="@+id/pv_tempreminder_one"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

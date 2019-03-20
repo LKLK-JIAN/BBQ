@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_channelfour_back"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_channelfour_setting"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/sb_add" />
+
+        <TextView
+            android:id="@+id/tv_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/channel_four"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/iv_channelfour_file"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:background="@android:color/transparent"
+            android:onClick="file"
+            android:src="@mipmap/save_img" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_main_bluetooth"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="17dp"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:text="TextView" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_main_battery"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignTop="@+id/tv_main_bluetooth"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="11dp"-->
+        <!--android:text="TextView" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channel_food"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/tv_main_bluetooth"-->
+        <!--android:layout_alignTop="@+id/textView4"-->
+        <!--android:text="@string/lowtemperaturealarmvalue"-->
+        <!--android:textColor="@color/balck" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="18dp"-->
+        <!--android:layout_below="@+id/textView10"-->
+        <!--android:layout_alignStart="@+id/tv_main_battery"-->
+        <!--android:layout_marginTop="-70dp"-->
+        <!--android:text="@string/hightemperaturealarmvalue"-->
+        <!--android:textColor="@color/balck" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelfour_value"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginBottom="97dp"-->
+        <!--android:textSize="90sp"-->
+        <!--android:text="00" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView7"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginEnd="24dp"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:background="@drawable/ovalred_background"-->
+        <!--android:gravity="center"-->
+        <!--android:text="50 ℃" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/textView7"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginEnd="152dp"-->
+        <!--android:text="  0  ℃"-->
+        <!--android:visibility="gone"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/tv_main_bluetooth"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:background="@drawable/ovalblue_background"-->
+        <!--android:gravity="center"-->
+        <!--android:text="-10 ℃" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/textView7"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="132dp"-->
+        <!--android:text="@string/highesttemperature"-->
+        <!--android:textColor="@color/balck"-->
+        <!--android:visibility="gone"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/textView10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="70dp"-->
+        <!--android:text="TextView"-->
+        <!--android:visibility="gone"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_channelfour_unit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_marginEnd="84dp"-->
+        <!--android:layout_marginBottom="65dp"-->
+        <!--android:textSize="45sp"-->
+        <!--android:text="℃" />-->
+        <!--</RelativeLayout>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_channelfour"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/food"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_channelfour_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/level" />
+
+                <TextView
+                    android:id="@+id/tv_channelfour_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/lowalarm_bg"
+                    android:gravity="center"
+                    android:text="@string/limit" />
+
+                <TextView
+                    android:id="@+id/tv_channelfour_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_align"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@+id/ll_channelfour"
+                android:background="@color/bg_black"></View>
+
+            <TextView
+                android:id="@+id/tv_channelfour_timedown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="13dp"
+                android:text=""
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tv_channelfour_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="97dp"
+                android:text="00"
+                android:textSize="90sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_channelfour_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="169dp"
+                android:layout_marginBottom="10dp"
+                android:text="℃"
+                android:textSize="45sp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bv_channelfour_battery"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@id/ll_channelfour">
+
+                <com.example.benetech.bbq.view.RingProgressBar
+                    android:id="@+id/rb_channelfour_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    app:present="@string/present"
+                    app:textSize="55sp"
+                    app:unittemp="℃"
+                    app:bftSize="20sp"
+                    app:ringProgressColor="@color/lowalarm_bg" />
+            </RelativeLayout>
+            <com.example.benetech.bbq.view.BatteryView
+                android:id="@+id/bv_channelfour_battery"
+                android:layout_width="30dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/ll_channelfour"
+                android:layout_marginRight="15dp"
+                android:background="#fff"
+                android:gravity="center"
+                app:batteryColor="@android:color/black"
+                app:batteryOrientation="horizontal"
+                app:batteryPower="70" />
+            <View
+                android:layout_width="130dp"
+                android:layout_height="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bg_black"></View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#18caff">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_channelfour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+            </com.github.mikephil.charting.charts.LineChart>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
